@@ -73,6 +73,9 @@ catalogs:
     '@iconify-json/carbon':
       specifier: ^1.2.8
       version: 1.2.8
+    '@iconify-json/material-symbols':
+      specifier: ^1.2.21
+      version: 1.2.21
     '@vue-macros/volar':
       specifier: ^3.0.0-beta.7
       version: 3.0.0-beta.7
@@ -188,6 +191,9 @@ importers:
       '@iconify-json/carbon':
         specifier: catalog:dev
         version: 1.2.8
+      '@iconify-json/material-symbols':
+        specifier: catalog:dev
+        version: 1.2.21
       '@intlify/unplugin-vue-i18n':
         specifier: catalog:build
         version: 6.0.5(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(rollup@4.37.0)(typescript@5.8.2)(vue-i18n@11.1.2(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
@@ -1419,6 +1425,9 @@ packages:
 
   '@iconify-json/carbon@1.2.8':
     resolution: {integrity: sha512-6xh4YiFBz6qoSnB3XMe23WvjTJroDFXB17J1MbiT7nATFe+70+em1acRXr8hgP/gYpwFMHFc4IvjA/IPTPnTzg==}
+
+  '@iconify-json/material-symbols@1.2.21':
+    resolution: {integrity: sha512-78o99N3oYeWY91EvZDl5bAPSPtO3rgkPwuOfgk4iBLbpb2peE6ueZFiMA/RURpy8jf4Pyt9rUtjP34UJIkVAcA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -7258,6 +7267,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.2': {}
 
   '@iconify-json/carbon@1.2.8':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/material-symbols@1.2.21':
     dependencies:
       '@iconify/types': 2.0.0
 
