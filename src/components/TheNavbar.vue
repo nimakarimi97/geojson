@@ -18,7 +18,7 @@ async function toggleLocales() {
         <div i-carbon-home />
       </RouterLink>
 
-      <RouterLink icon-btn to="/about" :title="t('button.about')">
+      <RouterLink icon-btn to="/about" :title="t('button.about')" data-test-id="about">
         <div i-carbon-dicom-overlay />
       </RouterLink>
 
