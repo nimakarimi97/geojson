@@ -2,12 +2,10 @@ button:
   about: Su di me
   back: Indietro
   go: Vai
-  home: Home
+  home: GeoJSON Tool
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
-intro:
-  desc: Modello per una Applicazione Vite
-  dynamic-route: Demo di rotta dinamica
-  hi: Ciao, {name}!
-  whats-your-name: Come ti chiami?
+api:
+  gtfs_docs: API Dati Trasporto
+  pinbike_docs: API di Pinbike
 not-found: Non trovato
