@@ -25,7 +25,6 @@ async function toggleLocales() {
       <div class="group relative" icon-btn>
         <button
           :title="t('api.gtfs_docs')"
-
           flex-center hover:text-blue-500 dark:hover:text-blue-400
         >
           <div i-carbon-api-1 />
@@ -68,7 +67,7 @@ async function toggleLocales() {
     </div>
 
     <div flex-center>
-      <button icon-btn :title="t('button.toggle_dark')" @click="toggleDark()">
+      <button icon-btn :title="t('button.toggle_dark')" data-test-id="toggle_dark" @click="toggleDark()">
         <div i="carbon-sun dark:carbon-moon" />
       </button>
 
