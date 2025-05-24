@@ -14,7 +14,7 @@ export const createApp = ViteSSG(
   App,
   {
     routes: setupLayouts(routes),
-    base: import.meta.env.VITE_BASE_URL,
+    base: import.meta.env.VITE_APP_BASE_URL,
   },
   (ctx) => {
     // install all modules under `modules/`

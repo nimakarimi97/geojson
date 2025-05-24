@@ -1,5 +1,5 @@
 context('Basic', () => {
-  const baseUrl = `http://localhost:3333${import.meta.env.VITE_BASE_URL}`
+  const baseUrl = `http://localhost:3333${import.meta.env.VITE_APP_BASE_URL}`
 
   beforeEach(() => {
     cy.visit('/')
