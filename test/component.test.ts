@@ -37,7 +37,7 @@ describe('component TheNavbar.vue', () => {
     expect(toggleDark).toHaveBeenCalled()
   })
 
-  it('should navigate to the about page', () => {
+  it('should navigate to the docs page', () => {
     const wrapper = mount(TheNavbar, {
       global: {
         plugins: [i18n], // Install i18n plugin
@@ -47,8 +47,8 @@ describe('component TheNavbar.vue', () => {
       },
     })
 
-    const aboutLink = wrapper.find('[data-test-id="about"]')
-    expect(aboutLink.exists()).toBe(true)
-    expect(aboutLink.attributes('to')).toBe('/about')
+    const docsLink = wrapper.find('[data-test-id="docs"]')
+    expect(docsLink.exists()).toBe(true)
+    expect(docsLink.attributes('to')).toBe('/docs')
   })
 })

@@ -12,13 +12,13 @@ async function toggleLocales() {
 </script>
 
 <template>
-  <nav flex="~ gap-4" justify-between px-6 py-4 text-xl>
+  <nav flex="~ gap-4" mb-5 justify-between px-6 py-4 text-xl>
     <div flex-center>
       <RouterLink icon-btn to="/" :title="t('button.home')" data-test-id="home">
         <div i-carbon-home />
       </RouterLink>
 
-      <RouterLink icon-btn to="/about" :title="t('button.about')" data-test-id="about">
+      <RouterLink icon-btn to="/docs" :title="t('button.docs')" data-test-id="docs">
         <div i-carbon-dicom-overlay />
       </RouterLink>
 

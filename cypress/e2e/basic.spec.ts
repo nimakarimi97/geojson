@@ -20,10 +20,10 @@ context('Basic', () => {
   })
 
   it('markdown', () => {
-    cy.get('[data-test-id="about"]')
+    cy.get('[data-test-id="docs"]')
       .click()
       .url()
-      .should('eq', `${baseUrl}about`)
+      .should('eq', `${baseUrl}docs`)
 
     cy.get('.shiki')
       .should('exist')
