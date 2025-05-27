@@ -248,6 +248,7 @@ declare global {
   const useServerHeadSafe: typeof import('@unhead/vue')['useServerHeadSafe']
   const useServerSeoMeta: typeof import('@unhead/vue')['useServerSeoMeta']
   const useSessionStorage: typeof import('@vueuse/core')['useSessionStorage']
+  const useSessionsStore: typeof import('./stores/sessions')['useSessionsStore']
   const useShare: typeof import('@vueuse/core')['useShare']
   const useSlots: typeof import('vue')['useSlots']
   const useSorted: typeof import('@vueuse/core')['useSorted']
@@ -560,6 +561,7 @@ declare module 'vue' {
     readonly useServerHeadSafe: UnwrapRef<typeof import('@unhead/vue')['useServerHeadSafe']>
     readonly useServerSeoMeta: UnwrapRef<typeof import('@unhead/vue')['useServerSeoMeta']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
+    readonly useSessionsStore: UnwrapRef<typeof import('./stores/sessions')['useSessionsStore']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSorted: UnwrapRef<typeof import('@vueuse/core')['useSorted']>
@@ -591,7 +593,6 @@ declare module 'vue' {
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useUrlSearchParams: UnwrapRef<typeof import('@vueuse/core')['useUrlSearchParams']>
     readonly useUserMedia: UnwrapRef<typeof import('@vueuse/core')['useUserMedia']>
-    readonly useUserStore: UnwrapRef<typeof import('./stores/user')['useUserStore']>
     readonly useVModel: UnwrapRef<typeof import('@vueuse/core')['useVModel']>
     readonly useVModels: UnwrapRef<typeof import('@vueuse/core')['useVModels']>
     readonly useVibrate: UnwrapRef<typeof import('@vueuse/core')['useVibrate']>

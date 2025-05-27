@@ -3,6 +3,7 @@ button:
   back: Indietro
   go: Vai
   home: GeoJSON Tool
+  sessions: Sessioni
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
 api:

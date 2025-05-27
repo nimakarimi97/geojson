@@ -1,5 +1,6 @@
 import type { UserModule } from './types'
 
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { ViteSSG } from 'vite-ssg'
 import { routes } from 'vue-router/auto-routes'
@@ -8,6 +9,8 @@ import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+
+ModuleRegistry.registerModules([AllCommunityModule])
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
